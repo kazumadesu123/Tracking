@@ -2,7 +2,7 @@ import cv2
 import time
 import numpy as np
 import pyautogui as pg
-pg.PAUSE = 0.2
+
 
 video = cv2.VideoCapture(0)
 count = video.get(cv2.CAP_PROP_FRAME_COUNT)
@@ -52,19 +52,19 @@ while True:
         x,y = int(mu["m10"]/mu["m00"]) , int(mu["m01"]/mu["m00"])
         
         if(0<= x <=128 and 0<= y <=96):
-            #if(number != 1):
-                pg.keyDown('e')
+            if(number != 1):
+                pg.keyDown('s')
                 number=1
-                #time.sleep(0.003)
-                pg.keyUp('e')
+                time.sleep(0.003)
+                pg.keyUp('s')
                 
 
 
         if(129<= x <=256 and 0<= y <=96):
-            #if(number != 2):
+            if(number != 2):
                 pg.keyDown('a')
                 number=2
-                #time.sleep(0.003)
+                time.sleep(0.003)
                 pg.keyUp('a')
             
           
@@ -77,10 +77,10 @@ while True:
             
         
         if(385<= x <=512 and 0<= y <=96):
-           # if(number != 4):
+            if(number != 4):
                 pg.keyDown('d')
                 number=4
-                #time.sleep(0.003)
+                time.sleep(0.003)
                 pg.keyUp('d')
 
         
@@ -93,35 +93,35 @@ while True:
             
         
         if(0<= x <=128 and 97<= y <=192):
-            #if(number != 6):  
+            if(number != 6):  
                 pg.keyDown('s')
                 number=6
-                #time.sleep(0.003)
+                time.sleep(0.003)
                 pg.keyUp('s')
             
             
         if(129<= x <=256 and 97<= y <=192):
             if(number != 7):
-                pg.keyDown('e')
+                pg.keyDown('d')
                 number=7
                 time.sleep(0.003)
-                pg.keyUp('e')
+                pg.keyUp('d')
             
         
         if(257<= x <=384 and 97<= y <=192):
-           #if(number != 8):
+           if(number != 8):
                 pg.keyDown('w')
                 number=8
-                #time.sleep(0.003)
+                time.sleep(0.003)
                 pg.keyUp('w')
                 
         
         if(385<= x <=512 and 97<= y <=192):
-            #if(number != 9):
-                pg.keyDown('e')
+            if(number != 9):
+                pg.keyDown('a')
                 number=9
-                #time.sleep(0.003)
-                pg.keyUp('e')
+                time.sleep(0.003)
+                pg.keyUp('a')
                 
         
         if(513<= x <=640 and 97<= y <=192):
@@ -133,71 +133,71 @@ while True:
             
             
         if(0 <= x <=128 and 193<= y <=288):
-           # if(number != 11):
+            if(number != 11):
                 pg.keyDown('d')
                 number=11
-                #time.sleep(0.003)
+                time.sleep(0.003)
                 pg.keyUp('d')
             
         
         if(129<= x <=256 and 193<= y <=288):
-           # if(number != 12): 
+            if(number != 12): 
                 pg.keyDown('a')
                 number=12
-                #time.sleep(0.003)
+                time.sleep(0.003)
                 pg.keyUp('a')
     
         
         if(257<= x <=384 and 193<= y <=288):
-            #if(number != 13):
+            if(number != 13):
                 pg.keyDown('e')
                 number=13
-                #time.sleep(0.003)
+                time.sleep(0.003)
                 pg.keyUp('e')
                 
         
         if(385<= x <=512 and 193<= y <=288):
-           # if(number != 14):
+            if(number != 14):
                 pg.keyDown('d')
                 number=14
-               # time.sleep(0.003)
+                time.sleep(0.003)
                 pg.keyUp('d')
             
            
         if(513<= x <=640 and 193<= y <=288):
-           # if(number != 15):   
+            if(number != 15):   
                 pg.keyDown('o')
                 number=15
-               # time.sleep(0.003)
+                time.sleep(0.003)
                 pg.keyUp('o')
             
         
         if(0<= x <=128 and 289<= y <=384):
-           # if(number != 16):
+            if(number != 16):
                 pg.keyDown('w')
                 number=16
-               # time.sleep(0.003)
+                time.sleep(0.003)
                 pg.keyUp('w')
 
         if(129<= x <=256 and 289<= y <=384):
-           # if(number != 17):
+             if(number != 17):
                 pg.keyDown('d')
                 number=17
-               # time.sleep(0.003)
+                time.sleep(0.003)
                 pg.keyUp('d')
 
         if(257<= x <=384 and 289<= y <=384):
-           # if(number != 18):
+            if(number != 18):
                 pg.keyDown('s')
                 number=18
-               # time.sleep(0.003)
+                time.sleep(0.003)
                 pg.keyUp('s')
 
         if(385<= x <=512 and 289<= y <=384):
-          #  if(number != 19):
+            if(number != 19):
                 pg.keyDown('e')
                 number=19
-               # time.sleep(0.003)
+                time.sleep(0.003)
                 pg.keyUp('e')
 
         if(513<= x <=640 and 289<= y <=384):
@@ -209,39 +209,39 @@ while True:
                 
 
         if(0<= x <=128 and 385<= y <=480):
-            #if(number != 21):
-                pg.keyDown('e')
+            if(number != 21):
+                pg.keyDown('d')
                 number=21
-              #  time.sleep(0.003)
-                pg.keyUp('e')
+                time.sleep(0.003)
+                pg.keyUp('d')
 
         if(129<= x <=256 and 385<= y <=480):
-           # if(number != 22):
+            if(number != 22):
                 pg.keyDown('s')
                 number=22
-                #time.sleep(0.003)
+                time.sleep(0.003)
                 pg.keyUp('s')
 
         if(257<= x <=384 and 385<= y <=480):
-           # if(number != 23):
+            if(number != 23):
                 pg.keyDown('s')
                 number=23
-               # time.sleep(0.003)
+                time.sleep(0.003)
                 pg.keyUp('s')
 
         if(385<= x <=512 and 358<= y <=480):
-            #if(number != 124):
+            if(number != 124):
                 pg.keyDown('a')
                 number=24
-                #time.sleep(0.003)
+                time.sleep(0.003)
                 pg.keyUp('a')
 
         if(513<= x <=640 and 358<= y <=480):
-           # if(number != 25):
-                pg.keyDown('e')
+            if(number != 25):
+                pg.keyDown('w')
                 number=25
-               # time.sleep(0.003)
-                pg.keyUp('e')
+                time.sleep(0.003)
+                pg.keyUp('w')
             
         cv2.circle(frame, (x,y), 4, 100, 2, 4)
         #cv2.putText(frame, str(max_area), (x-30, y+50), cv2.FONT_HERSHEY_SCRIPT_SIMPLEX, 1, (255, 255, 255), 2, cv2.LINE_AA)
